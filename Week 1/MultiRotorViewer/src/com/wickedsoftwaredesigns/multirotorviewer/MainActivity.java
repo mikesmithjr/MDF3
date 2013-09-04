@@ -2,6 +2,7 @@ package com.wickedsoftwaredesigns.multirotorviewer;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.webkit.WebView;
 
@@ -13,7 +14,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		WebView multirotorViewer = (WebView) findViewById(R.id.webView);
-		
+		multirotorViewer.loadUrl(getIntent().getExtras().get(Intent.EXTRA_STREAM).toString());
 		
 		
 	}
