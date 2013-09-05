@@ -92,6 +92,13 @@
         android:layout_height="wrap_content" 
         android:text="@string/with_battery_camera_and_any_extra_equipment_" />
     
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multirotor_viewer_intructions_"
+        android:textColor="@android:color/holo_red_light"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    
     <Button 
         android:id="@+id/launchViewApp"
         android:layout_width="wrap_content"

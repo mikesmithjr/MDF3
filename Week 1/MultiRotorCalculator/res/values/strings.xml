@@ -18,5 +18,6 @@
         <string name="calculating_thrust">Calculating Thrust</string>
         <string name="thrust_per_motor_in_ounces">Thrust Per Motor in Ounces</string>
         <string name="press_button_to_launch_viewer_app">Press Button to Launch Viewer App</string>
+        <string name="multirotor_viewer_intructions_">Please click the button below and Select MultiRotorViewer to see a picture of what your MultiRotor copter could look like.</string>
 
 </resources>

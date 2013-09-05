@@ -55,6 +55,7 @@ public final class R {
         public static final int calculating_thrust=0x7f050008;
         public static final int enter_weight=0x7f050005;
         public static final int hello_world=0x7f050002;
+        public static final int multirotor_viewer_intructions_=0x7f05000b;
         public static final int number_of_motors=0x7f050006;
         public static final int press_button_to_launch_viewer_app=0x7f05000a;
         public static final int thrust_per_motor_in_ounces=0x7f050009;
