@@ -1,4 +1,13 @@
-package com.example.multirotorcalculator;
+/*
+ * project     MultiRotorCalculator
+ * 
+ * package		com.wickedsoftwaredesigns.multirotorcalculator
+ * 
+ * @author     Michael R. Smith Jr
+ * 
+ * date			Sep 5, 2013
+ */
+package com.wickedsoftwaredesigns.multirotorcalculator;
 
 import java.text.DecimalFormat;
 
@@ -22,6 +31,10 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class MainActivity.
+ */
 public class MainActivity extends Activity {
 
 	
@@ -29,6 +42,10 @@ public class MainActivity extends Activity {
 	String spinnerText;
 	String rotorCountImageURI;
 	int rotors;
+    
+    /* (non-Javadoc)
+     * @see android.app.Activity#onCreate(android.os.Bundle)
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -138,6 +155,12 @@ public class MainActivity extends Activity {
     
     
     //two decimal rounding function
+    /**
+     * Round two decimals.
+     *
+     * @param d the d
+     * @return the double
+     */
     double roundTwoDecimals(double d) {
     	//Setting the two decimal format
     	DecimalFormat twoDForm = new DecimalFormat("#.##");
@@ -146,6 +169,9 @@ public class MainActivity extends Activity {
     }
 
 
+    /* (non-Javadoc)
+     * @see android.app.Activity#onCreateOptionsMenu(android.view.Menu)
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
