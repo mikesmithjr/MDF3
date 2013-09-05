@@ -18,7 +18,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/what_your_multirotor_could_look_like"/>
+        android:text="@string/what_your_multirotor_could_look_like"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/tap_image_to_go_back"/>
     
     <WebView 
         android:id="@+id/webView"

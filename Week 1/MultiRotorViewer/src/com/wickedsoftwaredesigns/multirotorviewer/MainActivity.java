@@ -19,6 +19,9 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.webkit.WebSettings.LayoutAlgorithm;
@@ -71,6 +74,16 @@ public class MainActivity extends Activity {
 			//resizing the images to help fit the larger ones in the screen
 			multirotorViewer.getSettings().setLayoutAlgorithm(
 					LayoutAlgorithm.SINGLE_COLUMN);
+			//setting an on touch listener to close the viewer back to previous application
+			multirotorViewer.setOnTouchListener(new OnTouchListener() {
+				
+				@Override
+				public boolean onTouch(View arg0, MotionEvent arg1) {
+					// TODO Auto-generated method stub
+					finish();
+					return false;
+				}
+			});
 		}else{
 			//if no data in the intent the app closes
 			Log.i("Viewer App", "No Intent Data");
