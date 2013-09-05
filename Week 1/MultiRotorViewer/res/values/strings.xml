@@ -4,5 +4,6 @@
     <string name="app_name">MultiRotorViewer</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="what_your_multirotor_could_look_like">What Your MultiRotor Could Look Like</string>
 
 </resources>
