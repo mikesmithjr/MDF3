@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MultiRotor Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="all_calculations_based_on_a_fully_loaded_multirotor_">All calculations based on a fully loaded MultiRotor.</string>
+    <string name="with_battery_camera_and_any_extra_equipment_">With battery, camera, and any extra equipment.</string>
+    <string name="enter_weight">Enter Weight in Pounds</string>
+    <string name="number_of_motors">Number of Motors</string>
+    <string-array name="rotor_number">
+        <item name="octocopter">8</item>
+        <item name="hexacopter">6</item>
+        <item name="quadcopter">4</item>
+        <item name="tricopter">3</item>
+    </string-array>
+        <string name="calculate_thrust">Calculate Thrust</string>
+        <string name="calculating_thrust">Calculating Thrust</string>
+        <string name="thrust_per_motor_in_ounces">Thrust Per Motor in Ounces</string>
+        <string name="press_button_to_launch_viewer_app">Press Button to Launch Viewer App</string>
+
+</resources>
