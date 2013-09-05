@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.example.multirotorcalculator;
+package com.wickedsoftwaredesigns.multirotorcalculator;
 
 public final class R {
     public static final class array {
