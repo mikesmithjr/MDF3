@@ -37,6 +37,7 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 	Spinner spinner;
 	Button locationButton;
 	Button playerButton;
+	Button sensorButton;
 	LocationManager lm;
 	
 	@Override
@@ -57,6 +58,7 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 		accuracy = (TextView) findViewById(R.id.accuracyMeters);
 		locationButton = (Button) findViewById(R.id.locationButton);
 		playerButton = (Button) findViewById(R.id.launchPlayerActivity);
+		sensorButton = (Button) findViewById(R.id.launchSensorActivity);
 		
 		IntentFilter filter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
 		NetworkReceiver receiver = new NetworkReceiver();
@@ -69,11 +71,12 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 		}else{
 			spinner = (Spinner) findViewById(R.id.spinner);
 			List<String> providers = this.lm.getAllProviders();
-			ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_dropdown_item_1line, providers);
+			ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1, providers);
 			spinner.setAdapter(adapter);
 			
 			this.locationButton.setOnClickListener(this);
 			this.playerButton.setOnClickListener(this);
+			this.sensorButton.setOnClickListener(this);
 		
 		}
 		
@@ -126,8 +129,11 @@ public class MainActivity extends Activity implements OnClickListener, LocationL
 			}else{
 				lm.requestLocationUpdates(provider, 2*1000/*Milliseconds*/, 0/*meters*/, this);
 			}
-		}else{
+		}else if (v.equals(this.playerButton)){
 			Intent intent = new Intent(this, MoviePlayer.class);
+			startActivity(intent);
+		}else if (v.equals(this.sensorButton)){
+			Intent intent = new Intent(this, SensorActivity.class);
 			startActivity(intent);
 		}
 		

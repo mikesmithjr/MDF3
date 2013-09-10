@@ -25,6 +25,7 @@
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
 	        android:layout_gravity="left"
+	        android:layout_marginTop="20dip"
 	        android:text="@string/network_information"
 	        android:textAppearance="?android:attr/textAppearanceLarge"/>
 	    
@@ -44,7 +45,9 @@
 			        android:id="@+id/networkType"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
+			        android:layout_gravity="right"
 			        android:layout_weight="1"
+		        	android:text="@string/unavailable"
 			        android:textColor="@android:color/holo_green_light"/>
 			    
 		    </LinearLayout>
@@ -66,114 +69,147 @@
 			        android:id="@+id/networkName"
 			        android:layout_width="wrap_content"
 			        android:layout_height="wrap_content"
+			        android:layout_gravity="right"
 			        android:layout_weight="1"
+		        	android:text="@string/unavailable"
 			        android:textColor="@android:color/holo_green_light"/>
 			    
 		    </LinearLayout>
 	<TextView 
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:layout_gravity="left"
-	        android:text="@string/location_information"
-	        android:textAppearance="?android:attr/textAppearanceLarge"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dip"
+        android:text="@string/location_information"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
 	
-	<Spinner  
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-	<Button 
-	    android:id="@+id/locationButton"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:text="@string/get_location"/>
-	    
-		    <LinearLayout 
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:orientation="horizontal">
-		        
-			    <TextView 
-			        android:id="@+id/provider"
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:text="@string/provider_type"/>
-			    
-			    <TextView 
-			        android:id="@+id/providerType"
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:textColor="@android:color/holo_green_light"/>
-			    
-		    </LinearLayout>
+		<Spinner  
+	        android:id="@+id/spinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"/>
+		<Button 
+		    android:id="@+id/locationButton"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/get_location"/>
 		    
-		    <LinearLayout 
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:orientation="horizontal">
-		        
-			    <TextView 
-			        android:id="@+id/longitude"
-			        android:layout_width="wrap_content"
+			    <LinearLayout 
+			        android:layout_width="match_parent"
 			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:text="@string/longitude"/>
+			        android:orientation="horizontal">
+			        
+				    <TextView 
+				        android:id="@+id/provider"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="@string/provider_type"/>
+				    
+				    <TextView 
+				        android:id="@+id/providerType"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+			        	android:layout_gravity="right"
+				        android:layout_weight="1"
+		        		android:text="@string/unavailable"
+				        android:textColor="@android:color/holo_green_light"/>
+				    
+			    </LinearLayout>
 			    
-			    <TextView 
-			        android:id="@+id/longCoord"
-			        android:layout_width="wrap_content"
+			    <LinearLayout 
+			        android:layout_width="match_parent"
 			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:textColor="@android:color/holo_green_light"/>
+			        android:orientation="horizontal">
+			        
+				    <TextView 
+				        android:id="@+id/longitude"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="@string/longitude"/>
+				    
+				    <TextView 
+				        android:id="@+id/longCoord"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+			        	android:layout_gravity="right"
+				        android:layout_weight="1"
+		        		android:text="@string/unavailable"
+				        android:textColor="@android:color/holo_green_light"/>
+				    
+			    </LinearLayout>
 			    
-		    </LinearLayout>
-		    
-		    
-		    <LinearLayout 
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:orientation="horizontal">
-		        
-			    <TextView 
-			        android:id="@+id/latitude"
-			        android:layout_width="wrap_content"
+			    
+			    <LinearLayout 
+			        android:layout_width="match_parent"
 			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:text="@string/latitude"/>
+			        android:orientation="horizontal">
+			        
+				    <TextView 
+				        android:id="@+id/latitude"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="@string/latitude"/>
+				    
+				    <TextView 
+				        android:id="@+id/latCoord"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+			        	android:layout_gravity="right"
+				        android:layout_weight="1"
+		        		android:text="@string/unavailable"
+				        android:textColor="@android:color/holo_green_light"/>
+				    
+			    </LinearLayout>
 			    
-			    <TextView 
-			        android:id="@+id/latCoord"
-			        android:layout_width="wrap_content"
+			    <LinearLayout 
+			        android:layout_width="match_parent"
 			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:textColor="@android:color/holo_green_light"/>
+			        android:orientation="horizontal">
+			        
+				    <TextView 
+				        android:id="@+id/accuracy"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_weight="1"
+				        android:text="@string/accuracy_in_meters"/>
+				    
+				    <TextView 
+				        android:id="@+id/accuracyMeters"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+			        	android:layout_gravity="right"
+				        android:layout_weight="1"
+		        		android:text="@string/unavailable"
+				        android:textColor="@android:color/holo_green_light"/>
+				    
+			    </LinearLayout>
 			    
-		    </LinearLayout>
-		    
-		    <LinearLayout 
-		        android:layout_width="match_parent"
-		        android:layout_height="wrap_content"
-		        android:orientation="horizontal">
-		        
-			    <TextView 
-			        android:id="@+id/accuracy"
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:text="@string/accuracy_in_meters"/>
-			    
-			    <TextView 
-			        android:id="@+id/accuracyMeters"
-			        android:layout_width="wrap_content"
-			        android:layout_height="wrap_content"
-			        android:layout_weight="1"
-			        android:textColor="@android:color/holo_green_light"/>
-			    
-		    </LinearLayout>
-	<Button 
-	    android:id="@+id/launchPlayerActivity"
-	    android:layout_width="match_parent"
-	    android:layout_height="wrap_content"
-	    android:text="@string/launch_player_activity"/>
+	<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dip"
+        android:text="@string/movie_player"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		<Button 
+		    android:id="@+id/launchPlayerActivity"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/launch_player_activity"/>
+	
+	<TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="20dip"
+        android:text="@string/sensor_info"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+		<Button 
+		    android:id="@+id/launchSensorActivity"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/launch_sensor_activity"/>
+	
 </LinearLayout>
