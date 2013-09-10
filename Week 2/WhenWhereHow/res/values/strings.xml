@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WhenWhereHow</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="whenwherehow">WhenWhereHow</string>
+    <string name="network_type">Network Type</string>
+
+</resources>
