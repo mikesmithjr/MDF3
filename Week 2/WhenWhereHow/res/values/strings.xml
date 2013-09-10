@@ -17,5 +17,17 @@
     <string name="title_activity_movie_player">Movie Player</string>
     <string name="play_video">Play Video</string>
     <string name="launch_player_activity">Launch Player Activity</string>
+    <string name="movie_player">Movie Player</string>
+    <string name="sensor_info">Sensor Info</string>
+    <string name="launch_sensor_activity">Launch Sensor Activity</string>
+    <string name="title_activity_sensor">SensorActivity</string>
+    <string name="accelerometer_z_axis_in_m_sec2">Accelerometer Z Axis in m/sec2</string>
+    <string name="accelerometer_y_axis_in_m_sec2">Accelerometer Y Axis in m/sec2</string>
+    <string name="accelerometer_x_axis_in_m_sec2">Accelerometer X Axis in m/sec2</string>
+    <string name="proximity_in_cm_">Proximity in cm:</string>
+    <string name="sensor_information">Sensor Information</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="temp_in_celcius">Temp in Celcius</string>
+    <string name="light_in_lux">Light in Lux</string>
 
 </resources>
