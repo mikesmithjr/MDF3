@@ -6,5 +6,16 @@
     <string name="hello_world">Hello world!</string>
     <string name="whenwherehow">WhenWhereHow</string>
     <string name="network_type">Network Type</string>
+    <string name="name_of_network">Name of Network</string>
+    <string name="network_information">Network Information</string>
+    <string name="location_information">Location Information</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitude</string>
+    <string name="get_location">Get Location</string>
+    <string name="provider_type">Provider Type</string>
+    <string name="accuracy_in_meters">Accuracy in Meters</string>
+    <string name="title_activity_movie_player">Movie Player</string>
+    <string name="play_video">Play Video</string>
+    <string name="launch_player_activity">Launch Player Activity</string>
 
 </resources>
