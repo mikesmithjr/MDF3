@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_location"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_location"
+        android:icon="@drawable/ic_action_location_activity"/>
+
+    <item
+        android:id="@+id/action_video_player"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_video_player"
+        android:icon="@drawable/ic_action_video_player"/>
+    <item
+        android:id="@+id/action_sensors"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/action_sensors"
+        android:icon="@drawable/ic_action_sensors_activity"/>
+</menu>
