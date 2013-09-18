@@ -31,5 +31,6 @@
     <string name="light_in_lux">Light in Lux</string>
     <string name="action_video_player">Video</string>
     <string name="action_sensors">Sensors</string>
+    <string name="action_search">Search</string>
 
 </resources>

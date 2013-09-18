@@ -21,10 +21,11 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_action_location_activity=0x7f020000;
-        public static final int ic_action_sensors_activity=0x7f020001;
-        public static final int ic_action_video_player=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
+        public static final int ic_action_action_search=0x7f020000;
+        public static final int ic_action_location_activity=0x7f020001;
+        public static final int ic_action_sensors_activity=0x7f020002;
+        public static final int ic_action_video_player=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
     }
     public static final class id {
         public static final int accelX=0x7f090013;
@@ -77,6 +78,7 @@ public final class R {
         public static final int accelerometer_z_axis_in_m_sec2=0x7f060013;
         public static final int accuracy_in_meters=0x7f06000b;
         public static final int action_location=0x7f060001;
+        public static final int action_search=0x7f06001d;
         public static final int action_sensors=0x7f06001c;
         public static final int action_video_player=0x7f06001b;
         public static final int app_name=0x7f060000;
