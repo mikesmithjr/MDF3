@@ -27,7 +27,7 @@
     <string name="proximity_in_cm_">Proximity in cm:</string>
     <string name="sensor_information">Sensor Information</string>
     <string name="unavailable">Unavailable</string>
-    <string name="temp_in_celcius">Temp in Celcius</string>
+    <string name="temp_in_celcius">Temp in Celsius</string>
     <string name="light_in_lux">Light in Lux</string>
     <string name="action_video_player">Video</string>
     <string name="action_sensors">Sensors</string>
