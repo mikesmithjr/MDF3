@@ -3,12 +3,11 @@
     
     android:minWidth="180dp"
     android:minHeight="40dp"
-    android:updatePeriodMillis="500"
+    android:updatePeriodMillis="1000"
     android:initialLayout="@layout/widget_layout"
     android:resizeMode="horizontal"
     android:widgetCategory="home_screen"
     android:configure="com.example.bigspeedwidget.SpeedWidgetConfig"
     android:initialKeyguardLayout="@layout/widget_layout">
     
-
 </appwidget-provider>
