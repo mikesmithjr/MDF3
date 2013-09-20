@@ -10,5 +10,6 @@
         <item >Kph</item>
     </string-array>
         <string name="speed">Speed</string>
+        <string name="done">Done</string>
 
 </resources>

@@ -29,7 +29,7 @@ public final class R {
     public static final class id {
         public static final int action_settings=0x7f0a0005;
         public static final int doneButton=0x7f0a0002;
-        public static final int locationButton=0x7f0a0004;
+        public static final int mapsButton=0x7f0a0004;
         public static final int selectUnit=0x7f0a0000;
         public static final int speed=0x7f0a0003;
         public static final int spinner=0x7f0a0001;
@@ -44,6 +44,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f060001;
         public static final int app_name=0x7f060000;
+        public static final int done=0x7f060005;
         public static final int hello_world=0x7f060002;
         public static final int please_select_a_unit_of_measure=0x7f060003;
         public static final int speed=0x7f060004;
@@ -77,6 +78,6 @@ public final class R {
         public static final int AppTheme=0x7f080001;
     }
     public static final class xml {
-        public static final int speed_widget=0x7f040000;
+        public static final int widget=0x7f040000;
     }
 }
