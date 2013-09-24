@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.util.Log;
 import android.view.Menu;
@@ -33,7 +34,7 @@ public class MainActivity extends Activity {
 		freeWeatherView.setWebViewClient(new WebViewClient());
 		WebSettings webSettings = freeWeatherView.getSettings();
 		webSettings.setGeolocationEnabled(true);
-		webSettings.setGeolocationDatabasePath("data/data/FreeWeather");
+		webSettings.setGeolocationDatabasePath("/data/data/FreeWeather");
 		webSettings.setJavaScriptEnabled(true);
 		freeWeatherView.setWebChromeClient(new WebChromeClient(){
 			@Override
@@ -41,7 +42,7 @@ public class MainActivity extends Activity {
 		        Log.i("geolocation", "onGeolocationPermissionsShowPrompt()");
 
 		        final boolean remember = false;
-		        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 		        builder.setTitle("Locations");
 		        builder.setMessage("Would like to use your Current Location ")
 		        .setCancelable(true).setPositiveButton("Allow", new DialogInterface.OnClickListener() {
