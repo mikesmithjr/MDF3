@@ -19,6 +19,10 @@ import android.webkit.GeolocationPermissions;
 
 public class MainActivity extends Activity {
 
+	
+	LocationManager lm;
+	LocationListener ll;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -28,14 +32,17 @@ public class MainActivity extends Activity {
 		
 		setContentView(R.layout.activity_main);
 		
+		
+		
 		//Building the WebView and setting up for JavaScript
 		WebView freeWeatherView = (WebView) findViewById(R.id.webview);
 		freeWeatherView.loadUrl("http://www.wickedsoftwaredesigns.com/FreeWeather/index.html");
 		freeWeatherView.setWebViewClient(new WebViewClient());
 		WebSettings webSettings = freeWeatherView.getSettings();
 		webSettings.setGeolocationEnabled(true);
-		webSettings.setGeolocationDatabasePath("/data/data/FreeWeather");
+		webSettings.setGeolocationDatabasePath(this.getFilesDir().getPath());
 		webSettings.setJavaScriptEnabled(true);
+		freeWeatherView.addJavascriptInterface(new WebInterface(this), "Native");
 		freeWeatherView.setWebChromeClient(new WebChromeClient(){
 			@Override
 		     public void onGeolocationPermissionsShowPrompt(final String origin, final GeolocationPermissions.Callback callback) {
@@ -61,38 +68,10 @@ public class MainActivity extends Activity {
 		     }
 		});
 		
-		LocationManager lm = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
-		LocationListener ll = new LocationListener() {
-			
-			
-			@Override
-			public void onLocationChanged(Location location) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onProviderDisabled(String provider) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onProviderEnabled(String provider) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void onStatusChanged(String provider, int status,
-					Bundle extras) {
-				// TODO Auto-generated method stub
-				
-			}
-		};
-		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 0, ll);
+		
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -100,4 +79,8 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
+	protected void onStop(){
+		super.onStop();
+		lm.removeUpdates(ll);
+	}
 }
