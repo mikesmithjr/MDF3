@@ -13,6 +13,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
+import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.GeolocationPermissions;
@@ -32,7 +33,7 @@ public class MainActivity extends Activity {
 		
 		setContentView(R.layout.activity_main);
 		
-		
+		Log.i("Starting WebView", "Starting WebView");
 		
 		//Building the WebView and setting up for JavaScript
 		WebView freeWeatherView = (WebView) findViewById(R.id.webview);
@@ -56,11 +57,13 @@ public class MainActivity extends Activity {
 		           public void onClick(DialogInterface dialog, int id) {
 		              // origin, allow, remember
 		              callback.invoke(origin, true, remember);
+		              Log.i("geolocation", "User Clicked Allow");
 		           }
 		        }).setNegativeButton("Don't Allow", new DialogInterface.OnClickListener() {
 		           public void onClick(DialogInterface dialog, int id) {
 		              // origin, allow, remember
 		              callback.invoke(origin, false, remember);
+		              Log.i("geolocation", "User clicked deny");
 		           }
 		        });
 		        AlertDialog alert = builder.create();
@@ -79,8 +82,5 @@ public class MainActivity extends Activity {
 		return true;
 	}
 
-	protected void onStop(){
-		super.onStop();
-		lm.removeUpdates(ll);
-	}
+	
 }
